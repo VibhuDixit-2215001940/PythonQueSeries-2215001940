@@ -1,4 +1,4 @@
-#Printing Boundaries elements 
+#Printing Upper half of matrix 
 r=int(input("Enter the no. of rows: "))
 c=int(input("Enter the no. of columns: "))
 x=[]
@@ -9,7 +9,7 @@ for i in range(r):
 	x.append(y)
 for i in range(r):
 	for j in range(c):
-		if(i==0 or i==r-1 or j==0 or j==r-1):
+		if(i+j<=r-1):
 			print(x[i][j],end=' ')
 		else:
 			print( " ",end=' ')
